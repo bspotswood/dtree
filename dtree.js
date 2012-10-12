@@ -28,7 +28,7 @@ function Node(id, pid, name, url, title, target, icon, iconOpen, open) {
 };
 
 // Tree object
-function dTree(objName) {
+function dTree(objName) {	// Doing this for hot-linking to the github pages where I'm placing this. Yeah, I'm a terrible person. So what.	var hostPathHack = 'http://bspotswood.github.com/dtree/';
 	this.config = {
 		target					: null,
 		folderLinks			: true,
@@ -41,20 +41,20 @@ function dTree(objName) {
 		inOrder					: false
 	}
 	this.icon = {
-		root				: 'img/base.gif',
-		folder			: 'img/folder.gif',
-		folderOpen	: 'img/folderopen.gif',
-		node				: 'img/page.gif',
-		empty				: 'img/empty.gif',
-		line				: 'img/line.gif',
-		join				: 'img/join.gif',
-		joinBottom	: 'img/joinbottom.gif',
-		plus				: 'img/plus.gif',
-		plusBottom	: 'img/plusbottom.gif',
-		minus				: 'img/minus.gif',
-		minusBottom	: 'img/minusbottom.gif',
-		nlPlus			: 'img/nolines_plus.gif',
-		nlMinus			: 'img/nolines_minus.gif'
+		root				: hostPathHack+'img/base.gif',
+		folder			: hostPathHack+'img/folder.gif',
+		folderOpen	: hostPathHack+'img/folderopen.gif',
+		node				: hostPathHack+'img/page.gif',
+		empty				: hostPathHack+'img/empty.gif',
+		line				: hostPathHack+'img/line.gif',
+		join				: hostPathHack+'img/join.gif',
+		joinBottom	: hostPathHack+'img/joinbottom.gif',
+		plus				: hostPathHack+'img/plus.gif',
+		plusBottom	: hostPathHack+'img/plusbottom.gif',
+		minus				: hostPathHack+'img/minus.gif',
+		minusBottom	: hostPathHack+'img/minusbottom.gif',
+		nlPlus			: hostPathHack+'img/nolines_plus.gif',
+		nlMinus			: hostPathHack+'img/nolines_minus.gif'
 	};
 	this.obj = objName;
 	this.aNodes = [];
